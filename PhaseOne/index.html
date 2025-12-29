@@ -1,11 +1,64 @@
+<!doctype html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>About Nai</title>
+    <style>
+      /* Make each main image exactly 2.5in x 2.5in */
+      img.thumb {
+        width: 2.5in;
+        height: 2.5in;
+        object-fit: cover;   /* use 'contain' if you prefer no cropping */
+        display: block;
+        margin: 0 auto 0.5rem;
+        border-radius: 4px;  /* optional styling */
+      }
+
+      /* Footer image: smaller so it fits nicely in the footer */
+      img.footer-thumb {
+        width: 1.5in;
+        height: 1.5in;
+        object-fit: cover;
+        border-radius: 4px;
+        vertical-align: middle;
+      }
+
+      /* Keep sections tidy and centered */
+      section {
+        display: inline-block;
+        vertical-align: top;
+        width: 2.8in; /* slightly wider so text can wrap under the image */
+        margin: 0.5rem;
+        text-align: center;
+      }
+
+      footer {
+        margin-top: 1.5rem;
+        text-align: center;
+      }
+
+      /* Smaller boxes on narrow screens (optional) */
+      @media (max-width: 480px) {
+        img.thumb {
+          width: 1.6in;
+          height: 1.6in;
+        }
+        img.footer-thumb {
+          width: 1.0in;
+          height: 1.0in;
+        }
+        section { width: 1.9in; }
+      }
+    </style>
+  </head>
   <body>
     <header>
       <h1>Hey Y'all it's Nai! Here are a few things About Me</h1>
     </header>
     <main>
       <section>
-    <img src="images/ramen.jpg" alt="A bowl of ramen" width="300" />
+        <img class="thumb" src="images/ramen.jpg" alt="A bowl of ramen" />
         <h2>Five of My Fave Foods</h2>
         <ul>
           <li>Veggie Curry</li>
@@ -17,7 +70,7 @@
       </section>
 
       <section>
-    <img src="images/busygirl.jpg" alt="girl busy working" width="300" />
+        <img class="thumb" src="images/busygirl.jpg" alt="girl busy working" />
         <h3>Things To Do Today</h3>
         <ol>
           <li>Go to Work</li>
@@ -29,7 +82,7 @@
       </section>
 
       <section>
-    <img src="images/travelgirl.jpg" alt="girl traveling" width="300" />
+        <img class="thumb" src="images/travelgirl.jpg" alt="girl traveling" />
         <h4>Places to Visit</h4>
         <ul>
           <li>Japan</li>
@@ -41,7 +94,7 @@
       </section>
 
       <section>
-    <img src="images/movies.jpg" alt="movie theater" width="300" >
+        <img class="thumb" src="images/movies.jpg" alt="movie theater" />
         <h4>Five of My Fave Movies</h4>
         <ol>
           <li>Coming To America</li>
@@ -54,7 +107,15 @@
 
       <footer>
         <p>That's All Folks!</p>
-<a href="https://i.etsystatic.com/40236108/r/il/2404be/5838118581/il_fullxfull.5838118581_q0l5.jpg" alt= "girl on laptop" target="_blank" rel="noreferrer">girl_on_laptop</a>
+        <!-- Clickable footer image: opens the full image in a new tab -->
+        <a href="https://i.etsystatic.com/40236108/r/il/2404be/5838118581/il_fullxfull.5838118581_q0l5.jpg"
+           target="_blank"
+           rel="noopener noreferrer"
+           title="Open girl on laptop image in a new tab">
+          <img class="footer-thumb"
+               src="https://i.etsystatic.com/40236108/r/il/2404be/5838118581/il_fullxfull.5838118581_q0l5.jpg"
+               alt="Girl on laptop — click to open full image" />
+        </a>
       </footer>
     </main>
   </body>
