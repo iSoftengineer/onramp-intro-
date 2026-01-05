@@ -17,8 +17,8 @@
 
           /* Style for footer thumbnail - smaller, for footer display */
     img.footer-thumb {
-      width: 1.5in;
-      height: 1.5in;
+      width: 2.5in;
+      height: 2.5in;
       object-fit: cover;
       border-radius: 4px;
       vertical-align: middle;
@@ -34,21 +34,21 @@
 
      /* Center footer content */
     footer {
-      margin-top: 1.5rem;
+      margin-top: 2.5rem;
       text-align: center;
     }
 
       /* Smaller boxes on narrow screens (optional) */
       @media (max-width: 480px) {
         img.thumb {
-          width: 1.6in;
-          height: 1.6in;
+          width: 2.6in;
+          height: 2.6in;
         }
         img.footer-thumb {
-          width: 1.0in;
-          height: 1.0in;
+          width: 2.0in;
+          height: 2.0in;
         }
-        section { width: 1.9in; }
+        section { width: 2.9in; }
       }
     </style>
   </head>
@@ -113,7 +113,46 @@
           <li>The Matrix</li>
         </ol>
       </section>
-
+<section>
+        <form>
+           <h1> For Updates Subcribe Now!</h1>
+           <div>
+             <label for="firstname">First Name:</label>
+             <input type="text" id="firstName" name="firstName" required aria-required="true" />            
+           </div> 
+           <div>
+             <label for="lastname">Last Name:</label>
+           <input type="text" id="lastName" name="lastName" required aria-required="true" />            
+           </div> 
+           <div>
+             <label for="user-email">Your Email:</label>
+             <input type="email" id="email" name="email" required aria-required="true" />
+           </div> 
+           <div>
+             <label for="message">Suggestions:</label>
+             <input type="text" id="message">             
+           </div>
+            <br>
+           <div>
+            <button type="submit">Subscribe</button>
+           </div>
+        </form>
+        
+      <br>
+        
+        <table bgcolor="darkgrey" width="400">
+           <caption>Future Hobbies</caption>
+           <tr bgcolor="grey">
+             <th width="200"> Learn to Speak fluent French</th>
+             <th width="200"> Learn Gymnast level Flexibilty</th>
+           </tr>
+           <tr bgcolor="lightgrey" align="center">
+           <th>Should take me 6 Months</th>
+           <th>Should take me 6 Months</th>
+           </tr>
+          </table>      
+      </section>
+      
       <footer>
         <p>That's All Folks!</p>
         <!-- Clickable footer image: opens the full image in a new tab -->
