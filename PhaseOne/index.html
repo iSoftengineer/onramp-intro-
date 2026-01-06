@@ -1,10 +1,9 @@
-  <!doctype html>
+<!doctype html>
 <html>
   <head>
     <meta charset="utf-8" >
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>About Nai</title> href="CSS/main.css"
-    <link rel="stylesheet"
+    <title>About Nai</title>
     <style>
       /* Make each main image exactly 2.5in x 2.5in */
       img.thumb {
@@ -16,15 +15,14 @@
         border-radius: 4px;  /* optional styling */
       }
 
-      /* Footer image: smaller so it fits nicely in the footer */
-      img.footer-thumb {
-        width: 1.5 in;
-        height: 1.5 in;
-        object-fit: cover;
-        border-radius: 4 px;
-        vertical-align: middle;
-      }
-
+          /* Style for footer thumbnail - smaller, for footer display */
+    img.footer-thumb {
+      width: 2.5in;
+      height: 2.5in;
+      object-fit: cover;
+      border-radius: 4px;
+      vertical-align: middle;
+    }
       /* Keep sections tidy and centered */
       section {
         display: inline-block;
@@ -34,33 +32,35 @@
         text-align: center;
       }
 
-      footer {
-        margin-top: 1.5rem;
-        text-align: center;
-      }
+     /* Center footer content */
+    footer {
+      margin-top: 2.5rem;
+      text-align: center;
+    }
 
       /* Smaller boxes on narrow screens (optional) */
       @media (max-width: 480px) {
         img.thumb {
-          width: 1.6in;
-          height: 1.6in;
+          width: 2.6in;
+          height: 2.6in;
         }
         img.footer-thumb {
-          width: 1.0in;
-          height: 1.0in;
+          width: 2.0in;
+          height: 2.0in;
         }
-        section { width: 1.9in; }
+        section { width: 2.9in; }
       }
     </style>
   </head>
   <body>
-    <header>
-      <h1>Hey Y'all it's Nai! Here are a few things About Me</h1>
+    <header> 
+      <h1>Hey Y'all it's Nai!  Here are a few things About Me</h1>
     </header>
     <main>
       <section>
+        
             <img class="thumb"
-        <img src="ramen.jpg" alt="A steaming bowl of ramen with toppings">
+              src="ramen.jpg" alt="A steaming bowl of ramen with toppings" >
 
         <h2>Five of My Fave Foods</h2>
         <ul>
@@ -72,22 +72,24 @@
         </ul>
       </section>
 
+      
       <section>
-           <img class="thumb"
-           src="busygirl.jpg" alt="Young woman focused on her laptop surrounded by notebooks and coffee">
+        <img class="thumb"
+          src="busygirl.jpg" alt="Young woman focused on her laptop surrounded by notebooks and coffee">
         <h3>Things To Do Today</h3>
         <ol>
           <li>Go to Work</li>
           <li>Go to the gym</li>
-          <li>Get gas</li>
+          <li>Get gas</li> 
           <li>Laundry</li>
           <li>Homework</li>
         </ol>
       </section>
 
+      
       <section>
         <img class="thumb" 
-          src="travelgirl.jpg" alt="Woman with backpack taking a photo while exploring a new city">
+          src="travelgirl.jpg" alt="Woman with backpack taking a photo while exploring a new city" >
         <h4>Places to Visit</h4>
         <ul>
           <li>Japan</li>
@@ -98,9 +100,10 @@
         </ul>
       </section>
 
+      
       <section>
         <img class="thumb" 
-          src="movies.jpg" alt="items related to movie theater popcorn 3d glasses film reel">
+          src="movies.jpg" alt="items related to movie theater popcorn 3d glasses film reel" >
         <h4>Five of My Fave Movies</h4>
         <ol>
           <li>Coming To America</li>
@@ -110,8 +113,7 @@
           <li>The Matrix</li>
         </ol>
       </section>
-
-      <section>
+<section>
         <form>
            <h1> For Updates Subcribe Now!</h1>
            <div>
@@ -150,7 +152,7 @@
            </tr>
           </table>      
       </section>
-       
+      
       <footer>
         <p>That's All Folks!</p>
         <!-- Clickable footer image: opens the full image in a new tab -->
