@@ -26,7 +26,23 @@
     margin: 0 auto 30px;
     border: 2px solid aqua;
 }
-          /* Style for footer thumbnail - smaller, for footer display */
+/* Container for all list sections */
+.list-container {
+  display: flex;
+  flex-wrap: wrap; /* allow wrapping on smaller screens */
+  justify-content: space-between; /* space between sections */
+  align-items: stretch; /* make all sections equal height */
+}
+
+/* Style for each section containing a list */
+.list-container section {
+  flex: 1; /* expand equally */
+  min-width: 200px; /* prevent too narrow on small screens */
+  margin: 0.5rem; /* spacing around sections */
+  box-sizing: border-box; /* include padding/border in width/height */
+}
+      
+      /* Style for footer thumbnail - smaller, for footer display */
     img.footer-thumb {
       width: 2.5in;
       height: 2.5in;
