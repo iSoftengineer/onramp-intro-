@@ -2,28 +2,43 @@
   text-align: center;
 }
 
- main{ 
+body{
+    margin: 0px;
+}
+
+main{
     margin-left: 20px;
     margin-right: 20px;
 }
 
+h1{
+    text-align: center;
+}
+
+.navbar{
+    background-color: hsl(0, 0%, 25%);
+}
+
 .navbar ul{
-    list-style-type: none;
-    background-color: aqua;
+    list-style: none;
     padding: 0px;
     margin: 0px;
-    overflow: hidden;
+    display: inline-flex;
+
 }
- .navbar a{
-     color: purple;
-     text-decoration: none;
-     padding: 15px;
-     display: block;
-     text-align: center;
-} 
-  .navbar a:hover{
-      background-color: aqua;
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+
 }
-  .navbar li{
-   float: left;
+
+.navbar a:hover{
+    background-color: hsl(0, 0%, 10%);
 }
+
+
+
