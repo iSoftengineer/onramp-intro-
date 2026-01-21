@@ -1,30 +1,84 @@
-h1{
-  text: align: center
-}
+ /* Make each main image exactly 2.5in x 2.5in */
+      img.thumb { 
+        width: 2.5in;
+        height: 2.5in;
+        object-fit: cover;   /* use 'contain' if you prefer no cropping */
+        display: block;
+        margin: 0 auto 0.5rem;
+        border-radius: 4px;  /* optional styling */
+      }
+      /* Add padding margins and border to submit button */
+      button {
+        color: blue;
+        font-size: 12px;
+        background-color: transparent;
+        padding: 16px 26px;
+        display: block;
+        margin: 0 auto 30px;
+        border: 2px solid aqua;
+   }
+      /* Container for all list sections */
+      .list-container {
+        display: flex;
+        flex-wrap: wrap; /* allow wrapping on smaller screens */
+        justify-content: space-between; /* space between sections */
+        align-items: stretch; /* make all sections equal height */
+      }
 
- main{ 
-    margin-left: 20px;
-    margin-right: 20px;
+      /* Style for each section containing a list */
+      .list-container section {
+         flex: 1; /* expand equally */
+         min-width: 100px; /* prevent too narrow on small screens */
+         margin: 0.5rem; /* spacing around sections */
+         box-sizing: border-box; /* include padding/border in width/height */
 }
+      /* Make all headings in your list sections the same size */
+      section h2, section h3, section h4, section h5 {
+        font-size: 18px; 
+        font-weight: normal; /* make all headers have same weight */
+        margin: 0.5em 0; /* control spacing */
+    }
+      
+      /* Style for footer thumbnail - smaller, for footer display */
+      img.footer-thumb {
+         width: 2.5in;
+         height: 2.5in;
+         object-fit: cover;
+         border-radius: 4px;
+         vertical-align: middle;
+    }
+      /* Keep sections tidy and centered */
+      section {
+         display: inline-block;
+         vertical-align: top;
+         width: 2.8 in; /* slightly wider so text can wrap under the image */
+         margin: 0.5 rem;
+         text-align: center;
+      }  
+      /* Center the form and table */
+      .centered-container {
+  width: 80%; /* or a fixed width like 600px */
+  max-width: 800px; /* optional, to limit max size */
+  margin: 0 auto; /* centers horizontally */
+  text-align: center; /* optional: centers inline content inside */
+   }
+      
+     /* Center footer content */
+     footer {
+        margin-top: 2.5rem;
+        text-align: center;
+    }
 
-.navbar ul{
-    list-style -type: none;
-    background color: hsl(0,0,25%);
-    padding: 0px;
-    margin: 0px;
-    overflow: hidden;
-}
- .navbar a{
-     color: white;
-     text-decoration: none;
-     padding: 15px;
-     display: block;
-     text: align: center;
-} 
-  .navbar a:hover{
-      background color: hsl(0,0,25%);
-}
-  .navbar li{
-   float: left;
-}
-  }
+      /* Smaller boxes on narrow screens (optional) */
+      @media (max-width: 480px) {
+          img.thumb {
+          width: 2.6in;
+          height: 2.6in;
+        }
+        img.footer-thumb {
+          width: 2.0in;
+          height: 2.0in;
+        }
+        section { width: 2.9in; }
+      }
+    </style>
