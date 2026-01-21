@@ -50,15 +50,17 @@ nav ul li{
 nav ul li a{
     color: purple;
     font-size: 17px;
-    text-transforms: uppercase;
+    text-transform: uppercase;
     text-decoration: none;
-    padding: 15px;
+    padding: 7 px 13px;
+    border-radius: 3px;
     display: block;
     text-align: center;
 }
 
-nav a:hover{
+a.active, a:hover{
     background-color: aqua;
+    transitions .5s;
 }
 
 
